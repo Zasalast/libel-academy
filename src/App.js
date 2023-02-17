@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import circle from './img/circle.svg';
 import optionsleft from './img/options-left.svg';
@@ -11,6 +12,7 @@ import logo6 from './img/s_6.jpg';
 import './App.css';
 
 function App() {
+  const [position, setPosition] = useState(0);
   useEffect(() => {
     const timer = setTimeout(() => {
       setPosition(position + 1);
