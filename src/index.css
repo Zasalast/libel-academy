@@ -446,6 +446,16 @@ card-img {
   margin-top     : 40px;
 }
 
+.button-left,
+.button-right {
+  padding         : 10px;
+  background-color: transparent;
+  color           : transparent;
+  border          : none;
+  margin-right    : 10px;
+  font-size       : 30px;
+}
+
 .drive-categories {
   display       : flex;
   flex-direction: row;
@@ -471,6 +481,25 @@ card-img {
   color           : transparent;
   border          : none;
   margin-right    : 10px;
+
+}
+
+.drive-categories {
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
+}
+
+.categories-title {
+  font-size   : 20px;
+  font-weight : bold;
+  margin-right: 20px;
+}
+
+.categories-buttons {
+  display       : flex;
+  flex-direction: row;
+  margin-right  : 20px;
 }
 
 .movie-cards {
