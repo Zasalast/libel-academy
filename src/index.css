@@ -1,13 +1,506 @@
+* {}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background             : #131722;
+  color                  : #FFFFFF;
+  width                  : 90%;
+  position               : relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app {
+
+  width: 90%;
+
+  background: #131722;
+}
+
+.Container-Head {
+
+  width     : 100%;
+  height    : 408px;
+  left      : 0px;
+  top       : 0px;
+  background: #252B39;
+}
+
+.circle {
+  /* circle */
+  box-sizing   : border-box;
+  position     : relative;
+  width        : 137px;
+  height       : 137px;
+  left         : 832px;
+  top          : 107px;
+  background   : #252B39;
+  border       : 1px solid #FFFFFF;
+  border-radius: 70px;
+}
+
+.polygon {
+  position     : relative;
+  width        : 84.67px;
+  height       : 84.67px;
+  left         : 11.47px;
+  top          : 52.97px;
+  background   : #D9D9D9;
+  border-radius: 9px;
+  transform    : rotate(-30deg);
+}
+
+.button-playlist {
+  /* button-playlist */
+  box-sizing: border-box;
+  position  : relative;
+
+  height       : 46px;
+  left         : 339px;
+  top          : 271px;
+  background   : #252B39;
+  border       : 1px solid #FFFFFF;
+  border-radius: 4px;
+  color        : #FFFFFF;
+}
+
+plus {
+  /* + PLUS */
+  position   : relative;
+  width      : 79px;
+  height     : 9px;
+  left       : 33px;
+  top        : 21px;
+  font-family: 'Inter';
+  font-style : normal;
+  font-weight: 500;
+  font-size  : 12px;
+  line-height: 15px;
+  display    : flex;
+  align-items: center;
+  color      : #FFFFFF;
+}
+
+.button-watch {
+  /* button-watch */
+  position: relative;
+
+  height       : 46px;
+  left         : 190px;
+  top          : 271px;
+  background   : #24BAEF;
+  border-radius: 3px;
+  color        : #FFFFFF;
+}
+
+watch-now {
+  /* WATCH NOW */
+
+
+  position   : relative;
+  width      : 100%;
+  height     : 100%;
+  font-family: 'Inter';
+  font-style : normal;
+
+  font-weight: 500;
+
+  font-size  : 12px;
+  line-height: 15px;
+  display    : flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+description-header {
+
+
+
+  position: relative;
+  width   : 429px;
+  height  : 45px;
+  left    : 190px;
+  top     : 181px;
+
+  font-family: 'Inter';
+  font-style : normal;
+  font-weight: 400;
+  font-size  : 12px;
+  line-height: 15px;
+  display    : flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+header-title {
+
+
+
+  position: relative;
+  width   : 335px;
+  height  : 45px;
+  left    : 188px;
+  top     : 105px;
+
+  font-family: 'Inter';
+  font-style : normal;
+  font-weight: 800;
+  font-size  : 40px;
+  line-height: 48px;
+
+  color: #FFFFFF;
+}
+
+container-body {
+  /* container-body */
+
+
+  position: relative;
+  width   : 100%;
+  height  : 614px;
+  left    : 0px;
+  top     : 408px;
+}
+
+container-movies-categories-left {
+  /* container-movies-categories-left */
+
+
+  display   : flex;
+  flex-wrap : nowrap;
+  overflow-x: scroll;
+}
+
+container-movies-categories-right {
+  /* container-movies-categories-left */
+
+
+  display   : flex;
+  flex-wrap : nowrap;
+  overflow-x: scroll;
+}
+
+drive-categories {
+  /* drive-categories */
+
+
+  position: absolute;
+  width   : 457px;
+  height  : 296px;
+  left    : 0px;
+  top     : -1px;
+}
+
+view-all {
+  /* VIEW ALL > */
+
+
+  position: absolute;
+  width   : 63px;
+  height  : 12px;
+  left    : 190px;
+  top     : 235px;
+
+  font-family: 'Inter';
+  font-style : normal;
+  font-weight: 700;
+  font-size  : 11px;
+  line-height: 13px;
+  display    : flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+title-categories {
+
+
+
+  position: absolute;
+  width   : 223px;
+  height  : 49px;
+  left    : 188px;
+  top     : 98px;
+
+  font-family: 'Inter';
+  font-style : normal;
+  font-weight: 700;
+  font-size  : 24px;
+  line-height: 29px;
+  display    : flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+driver-card {
+  /* driver-card */
+
+
+  position: absolute;
+  width   : 75px;
+  height  : 38px;
+  left    : 190px;
+  top     : 162px;
+}
+
+Desktop {
+  /* options-left */
+
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width   : 31px;
+  height  : 31px;
+  left    : 0px;
+  top     : 4px;
+
+  border       : 2px solid #535763;
+  border-radius: 70px;
+}
+
+button-left {
+  /* < */
+
+
+  position: absolute;
+  width   : 16px;
+  height  : 14px;
+  left    : 9px;
+  top     : 9px;
+
+  font-family: 'AmstelvarAlpha';
+  font-style : normal;
+  font-weight: 400;
+  font-size  : 24px;
+  line-height: 29px;
+  display    : flex;
+  align-items: center;
+  transform  : matrix(0, 1, 1, 0, 0, 0);
+  color      : #4B4F5B;
+  transform  : rotate(90deg);
+}
+
+option-right {
+  /* option-right */
+
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width   : 31px;
+  height  : 31px;
+  left    : 70px;
+  top     : 4px;
+
+  border       : 2px solid #535763;
+  border-radius: 70px;
+  transform    : matrix(-1, 0, 0, 1, 0, 0);
+}
+
+button-right {
+  /* < */
+
+
+  position: absolute;
+  width   : 16px;
+  height  : 14px;
+  left    : 22px;
+  top     : 9px;
+
+  font-family: 'AmstelvarAlpha';
+  font-style : normal;
+  font-weight: 400;
+  font-size  : 24px;
+  line-height: 29px;
+  display    : flex;
+  align-items: center;
+
+  color: #4B4F5B;
+
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+container-categories-list {
+  /* container-categories-list */
+
+
+  position: absolute;
+  width   : 982px;
+  height  : 299px;
+  left    : 458px;
+  top     : -1px;
+}
+
+options-list {
+  /* List options */
+
+
+  position: absolute;
+  width   : 210px;
+  height  : 50px;
+  left    : 0px;
+  top     : 1px;
+}
+
+text-list-options {
+  position: absolute;
+  width   : 69px;
+  height  : 10px;
+  left    : 137px;
+  top     : 39px;
+
+  font-family: 'Inter';
+  font-style : normal;
+  font-weight: 700;
+  font-size  : 11px;
+  line-height: 13px;
+  display    : flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+card {
+  /* card6 */
+
+
+  position: absolute;
+  width   : 123px;
+  height  : 215px;
+  left    : 670px;
+  top     : 72px;
+}
+
+card-title {
+  /* Midnght Sun */
+
+
+  position: absolute;
+  width   : 70px;
+  height  : 8px;
+  left    : -1px;
+  top     : 206px;
+
+  font-family: 'Inter';
+  font-style : normal;
+  font-weight: 700;
+  font-size  : 11px;
+  line-height: 13px;
+  display    : flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+card-categories {
+  /* Comedy, 2018 */
+
+
+  position: absolute;
+  width   : 68px;
+  height  : 9px;
+  left    : -1px;
+  top     : 189px;
+
+  font-family: 'Inter';
+  font-style : normal;
+  font-weight: 400;
+  font-size  : 9px;
+  line-height: 11px;
+  display    : flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+card-img {
+  /* img */
+
+
+  position: absolute;
+  width   : 123px;
+  height  : 179px;
+  left    : 0px;
+  top     : 0px;
+}
+
+
+
+.container-movies-categories-left {
+  display        : flex;
+  flex-direction : row;
+  justify-content: space-between;
+  align-items    : center;
+  margin-top     : 40px;
+}
+
+.drive-categories {
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
+}
+
+.categories-title {
+  font-size   : 20px;
+  font-weight : bold;
+  margin-right: 20px;
+}
+
+.categories-buttons {
+  display       : flex;
+  flex-direction: row;
+  margin-right  : 20px;
+}
+
+.button-left,
+.button-right {
+  padding         : 10px;
+  background-color: transparent;
+  color           : transparent;
+  border          : none;
+  margin-right    : 10px;
+}
+
+.movie-cards {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-between;
+}
+
+.movie-card {
+  margin-top: 20px;
+  width     : 30%;
+  width     : 164px;
+  ;
+}
+
+.card-img {
+  width : 164px;
+  height: 240px;
+  left  : 0px;
+  top   : 0px;
+
+}
+
+.card-categories {
+  font-size: 14px;
+  color    : #999;
+}
+
+.card-title {
+  font-size  : 18px;
+  font-weight: bold;
+  margin-top : 10px;
 }
