@@ -11,6 +11,15 @@ import logo6 from './img/s_6.jpg';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setPosition(position + 1);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [position]);
+
+  const moveLeft = () => setPosition(position - 10);
+  const moveRight = () => setPosition(position + 10);
   return (
     <div className="App">
       <header className="Container-Head">
@@ -80,8 +89,8 @@ function App() {
           <div className='drive-categories'>
             <div className='categories-title'>Action & Drama Movies</div>
             <div className='categories-buttons'>
-              <button className='button-left'> <img src={optionsleft} alt="Movie poster" className="card-img" /></button>
-              <button className='button-right'> <img src={optionsright} alt="Movie poster" className="card-img" /></button>
+              <button className='button-left' onClick={moveLeft}> <img src={optionsleft} alt="Movie poster" className="card-img" /></button>
+              <button className='button-right' onClick={moveRight}> <img src={optionsright} alt="Movie poster" className="card-img" /></button>
             </div>
             <div><a href="#">VIEW ALL</a></div>
           </div>
@@ -90,8 +99,8 @@ function App() {
           <div className='drive-categories'>
             <div className='categories-title'>Action & Drama Movies</div>
             <div className=''>
-              <button className='button-left'> <img src={optionsleft} alt="Movie poster" className="card-img" /></button>
-              <button className='button-right'> <img src={optionsright} alt="Movie poster" className="card-img" /></button>
+              <button className='button-left' onClick={moveLeft}> <img src={optionsleft} alt="Movie poster" className="card-img" /></button>
+              <button className='button-right' onClick={moveRight}> <img src={optionsright} alt="Movie poster" className="card-img" /></button>
             </div>
             <div><a href="#">VIEW ALL</a></div>
           </div>
